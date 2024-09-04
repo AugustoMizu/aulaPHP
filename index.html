@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <main>
+            <section id="box_pessoais">
+                <h1>CADASTRO</h1>
+                <div id="checkbox_dados">
+                    <div class="dados_pessoais">
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="dados_pessoais">
+                        <input type="text" placeholder="Endereço">
+                    </div>
+                    <div class="dados_pessoais">
+                        <input type="text" placeholder="Telefone">
+                    </div>
+                </div>
+            </section>
+            <section id="box_profissonais">
+                <p>Dados Profissionais:</p>
+                <div class="checkbox">
+                    <input type="checkbox" name="HMTL" id="html">
+                    <label for="html">HMTL</label>
+                    <input type="checkbox" name="CSS" id="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="JS" id="js">
+                    <label for="js">JS</label>
+                </div>
+                <br><br>
+                <P>Qual você prefere?</P>
+                <label class="container">HTML
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">CSS
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">JS 
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <p>Descreva sua experiência profissional</p>
+                <div>
+                    <input type="text" name="exp_profissional" id="descricao">
+                </div>
+            </section>
+            <input type="button" value="Enviar" >
+        </main>
+
+    </body>
+</html>
