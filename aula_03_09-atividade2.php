@@ -19,7 +19,7 @@
 
     <?php
 
-    $nota = $_POST["nota"];
+    $nota = $_POST["nota"] ?? null;
 
     if (!is_null($nota)) {
         switch ($nota) {
@@ -38,7 +38,9 @@
                 echo "A nota $nota equivale a D";
                 break;
             default:
-                echo "A nota $nota equivale a E";
+                if ($nota != null) {
+                    echo "A nota $nota equivale a E";
+                }
                 break;
         }
     }
