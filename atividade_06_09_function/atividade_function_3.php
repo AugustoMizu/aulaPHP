@@ -47,10 +47,8 @@
         }
     }
     $resultado =  round(calcula_peso($genere, $altura), 3);
-    echo "$resultado";
-    var_dump($genere);
     echo "<script>document.getElementById('resultado').value = '$resultado'</script>";
-    echo "<script>document.getElementById('genere').valeu = '$genere.value'</script>";
+    /*echo "<script>document.getElementById('genere').valeu = '$genere.value'</script>";*/
     ?>
 </body>
 
