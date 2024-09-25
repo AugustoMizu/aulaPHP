@@ -9,5 +9,5 @@ if($pdo){
 }else{
     echo "não conectado";
 }*/
-// os arquivos php são craidos para o crud como classes de java, sendo chamadados com require e 
+// os arquivos php são craidos para o crud como classes de java, sendo chamadados com require e method nos forms
 ?>
