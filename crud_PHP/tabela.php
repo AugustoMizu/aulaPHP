@@ -16,13 +16,13 @@ if($sql->rowCount() > 0){
         <th>Nome</th>
         <th>Email</th>        
     </tr>
-        <?php foreach($lista as $usuarios): ?>
+        <?php foreach($lista as $usuarios):?>
         <tr>
-            <td><?= $usuarios['id']?></td>
-            <td><?= $usuarios['nome']?></td>
-            <td><?= $usuarios['email']?></td>
+            <td><?= $usuarios["ID_cadastro"]?></td>
+            <td><?= $usuarios["nome"]?></td>
+            <td><?= $usuarios["email"]?></td>
             <td><a href="editar.php">Editar</a></td>
             <td><a href="excluir.php">Excluir</a></td>
         </tr>
-        <?php endforeach; ?>
+        <?php endforeach;?>
 </table>
