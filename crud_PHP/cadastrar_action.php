@@ -14,7 +14,6 @@ if ($nome && $email) {
     $sql->execute();
     header("Location:tabela.php");
 } else {
-    $aviso = "NÃO DEIXE CAMPOS EM BRANCO";
-    $_SESSION['aviso'] = $aviso;
+
     header("Location:cadastrar.php");
 }
